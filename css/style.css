@@ -764,9 +764,11 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  .member {
+    margin-bottom: 72px;
+  }
   .our-team-members li {
     width: 264px;
-    margin-bottom: 72px;
   }
   .our-portfolio {
     padding: 96px 0px;
@@ -779,8 +781,29 @@ footer {
   .footer-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 96px 16px;
+  }
+  .footer-content {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+  .footer-socials {
+    margin-right: 0;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-input-area {
+    text-align: center;
+  }
+  .footer-input-field {
+    flex-direction: column;
+    gap: 0;
   }
 }

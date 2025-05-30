@@ -619,7 +619,7 @@ footer {
 .mobile-menu {
   display: none;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .contact {
     display: none;
   }
@@ -773,6 +773,9 @@ footer {
   .our-portfolio {
     padding: 96px 0px;
   }
+  .our-portfolio ul {
+    justify-content: center;
+  }
   .our-portfolio-item {
     width: 288px;
     overflow: hidden;
@@ -805,5 +808,9 @@ footer {
   .footer-input-field {
     flex-direction: column;
     gap: 0;
+  }
+  .backdrop .form-container {
+    height: 623px;
+    width: 288px;
   }
 }

@@ -619,6 +619,9 @@ footer {
 .mobile-menu {
   display: none;
 }
+.hamburger {
+  display: none;
+}
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .contact {
     display: none;
@@ -729,6 +732,9 @@ footer {
   }
   .container {
     padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .our-goals {
     display: flex;
@@ -775,6 +781,8 @@ footer {
   }
   .our-portfolio ul {
     justify-content: center;
+    max-width: 360px;
+    align-items: center;
   }
   .our-portfolio-item {
     width: 288px;
@@ -812,5 +820,121 @@ footer {
   .backdrop .form-container {
     height: 623px;
     width: 288px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .header-container {
+    padding: 16px 24px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .logo {
+    margin-right: 120px;
+  }
+  .navigation {
+    margin-right: 120px;
+  }
+  header svg {
+    display: none;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact li a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.125;
+    text-decoration: none;
+  }
+  .hero-container {
+    padding: 136px 112px;
+    width: 100%;
+  }
+  .container {
+    padding: 96px 16px;
+  }
+  .our-goals {
+    display: flex;
+    gap: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .our-goals li:nth-child(1),
+  .our-goals li:nth-child(3) {
+    margin-right: 24px;
+  }
+  .our-goals li {
+    margin-bottom: 72px;
+    width: calc((100% - 48px) / 2);
+  }
+  .our-goals-icon {
+    display: none;
+  }
+  .our-goals li h4 {
+    color: var(--navy);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 2%;
+    margin-bottom: 8px;
+  }
+  .our-goals li p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2%;
+  }
+  .our-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .our-portfolio .container ul {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    width: 750px;
+  }
+  .our-team-container {
+    padding: 96px 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .our-team-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px;
+    width: 552px;
+  }
+  .member {
+    width: 264px;
+    margin-bottom: 40px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 96px 108px;
+    gap: 0px;
+  }
+  .footer-content {
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+  .footer-socials {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-resolution: 2x) {
+  .hero-container {
+    background-image: url('../images/2x-resolutions/people-office-1.jpg');
   }
 }
